@@ -4,7 +4,8 @@ html {
 }
 
 
+
 body {
     align-items: center;
-    background: linear-gradient(320deg, orange, red,yellow);
+    background: linear-gradient(320deg, #52ACFF,#FFE32C);
 }

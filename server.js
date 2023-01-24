@@ -2,7 +2,7 @@ import * as http from "http";
 import * as fsSync from "fs";
 import * as fs from "fs/promises";
 import * as path from "path";
-import  { fileURLToPath} from "url";
+import  {fileURLToPath} from "url";
  
 const host = "localhost";
 const port = 8080;
