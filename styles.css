@@ -4,7 +4,7 @@ html {
 }
 
 * {
-    padding: 0;
+    padding: 0.5%;
     margin: 0;
     font-family:Georgia;
 }
@@ -26,43 +26,71 @@ body {
     border-radius: 50%;
 }
 
-ul {
+.bio{
+    text-align: center;
+    margin: 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-listbox {
     list-style: none;
     background: #22328C;
-    
+    display: flex;
+    justify-items: center;
+    padding: 2%;
+    margin: .5%;
 }
 
-ul li {
-    display: inline-block;
+.navbar-item{
+    display: flex;
     position: relative;
-}
-
-ul li a {
-    float: left;
-    padding: 14px, 16px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    align-content: center;
     text-align: center;
-    font-size: 25px;
+    font-size: large;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family: Georgia;
 }
 
-ul li ul.drop-menu li {
-    display: block;
-}
-
-ul li ul.drop-menu {
-    width: 100%;
+.drop-menu {
+    display: none;
+    width:38%;
     background: #22438C;
     position: absolute;
     z-index: 999;
-    display: none;
+    list-style: none;
+
 }
 
-ul li a:hover {
+.drop-menu-item {
+    display:block;
+    font-size: large;
+    float: none;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar-item:hover {
+    background-color: #22438C;
+}
+
+.navbar li:hover .drop-menu {
+    display: flex;
+    flex-flow: column;
+} 
+
+.drop-menu-item:hover {
     background: #112C66;
 }
 
-ul li:hover ul.drop-menu {
-    display: block;
+.proj-text{
+    margin: 10%;
+    text-align: center;
 }
 

@@ -1,41 +1,51 @@
+<!-- HOME PAGE -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-    
-    <ul>
-        <li><a href="#">Home</a></li>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-listbox">
+        <li><a class="navbar-item" href="/index.html">Home</a></li>
         <li>
-            <a href="#">Project and Hobbies▾</a>
-            <ul class="drop-menu">
-                <li><a href="#"> Pico-8 Game </a></li>
-                <li><a href="#"> Violin and Piano </a></li>
-                <li><a href="#"> Japanese Language </a></li>
-            </ul>
+          <a class="navbar-item" id="dropmenu" href="#">Project and Hobbies▾</a>
+          <ul class="drop-menu">
+            <li>
+              <a class="drop-menu-item" href="./Pico8.html"> Pico-8 Game </a>
+            </li>
+            <li>
+              <a class="drop-menu-item" href="./violin.html"> Instruments </a>
+            </li>
+            <li><a class="drop-menu-item" href="./jpns.html"> Japanese </a></li>
+          </ul>
         </li>
-        <li><a href="#">Contact me</a></li>
-        <li><a href="http://matias.ma/nsfw">Do not</a></li>
-    </ul>
-
-
-    <h1>Welcome!</h1> 
-    <img src="images/pfp.jpg" id="pfp" alt="Hey das me" height="200" class="responsive">
-    <h2 id="bio-header"> About me: </h2>
-    <p id="bio-para">Hello all! My name is Mateo Romero I am
-        an independent web and game developer. <br>
-        I am a senior at New Mexico State University,
-        majoring in Computer Science and 
-        Linguistics.<br> I am from the beautiful capital of 
-        Santa Fe, New Mexico. <br> 
-    </p>
-
-
-
-</body>
+        <li><a class="navbar-item" href="#">Contact me</a></li>
+        <li><a class="navbar-item" href="http://matias.ma/nsfw">Do not</a></li>
+      </ul>
+    </nav>
+    <div class="bio">
+      <h1>Welcome!</h1>
+      <img
+        src="images/pfp.jpg"
+        id="pfp"
+        alt="Hey das me"
+        height="200"
+        class="responsive"
+      />
+      <h2 id="bio-header">About me:</h2>
+      <p id="bio-para">
+        Hello all! My name is Mateo Romero I am an independent web and game
+        developer. 
+        I am a senior at New Mexico State University, majoring in Computer
+        Science and Linguistics.
+        I am from the beautiful capital of Santa Fe, New Mexico.
+      </p>
+    </div>
+  </body>
 </html>
