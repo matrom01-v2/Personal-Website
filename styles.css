@@ -3,9 +3,66 @@ html {
     height: 100%;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Georgia;
+}
 
+
+.responsive {
+    max-width: 25%;
+    height: auto;
+}
 
 body {
     align-items: center;
     background: linear-gradient(320deg, #52ACFF,#FFE32C);
 }
+
+#pfp {
+    border: 5px solid #500;
+    shape-rendering: crispEdges;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+    background: #22328C;
+    
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    float: left;
+    padding: 14px, 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+ul li ul.drop-menu li {
+    display: block;
+}
+
+ul li ul.drop-menu {
+    width: 100%;
+    background: #22438C;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: #112C66;
+}
+
+ul li:hover ul.drop-menu {
+    display: block;
+}
+
