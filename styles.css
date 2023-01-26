@@ -6,7 +6,7 @@ html {
 * {
     padding: 0.5%;
     margin: 0;
-    font-family:Georgia;
+    font-family:serif;
 }
 
 
@@ -17,11 +17,11 @@ html {
 
 body {
     align-items: center;
-    background: linear-gradient(320deg, #52ACFF,#FFE32C);
+    background: linear-gradient(320deg, #080f6f,#6c0594);
 }
 
 #pfp {
-    border: 5px solid #500;
+    border: 5px solid rgb(123, 15, 185);
     shape-rendering: crispEdges;
     border-radius: 50%;
 }
@@ -29,19 +29,25 @@ body {
 .bio{
     text-align: center;
     margin: 5%;
+    color: aliceblue;
+    text-shadow: 0 0 10px #f736cd, 0 0 20px #f736cd, 0 0 30px #f736cd,
+    0 0 30px #c1a8e2;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .navbar-listbox {
     list-style: none;
-    background: #22328C;
+    background: #04023f;
     display: flex;
     justify-items: center;
-    padding: 2%;
+    justify-content: center;
+    padding: 1%;
+    width: 100%;
     margin: .5%;
 }
 
@@ -53,7 +59,7 @@ body {
     font-size: large;
     text-decoration: none;
     color:rgb(255, 255, 255);
-    font-family: Georgia;
+    font-family: Georgia;    
 }
 
 .drop-menu {
@@ -63,7 +69,6 @@ body {
     position: absolute;
     z-index: 999;
     list-style: none;
-
 }
 
 .drop-menu-item {
