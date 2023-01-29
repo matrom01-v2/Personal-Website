@@ -29,7 +29,7 @@ body {
 .bio{
     text-align: center;
     margin: 5%;
-    color: aliceblue;
+    color: rgb(240, 241, 255);
     text-shadow: 0 0 10px #f736cd, 0 0 20px #f736cd, 0 0 30px #f736cd;
 }
 
@@ -38,13 +38,24 @@ body {
     justify-content: center;
 }
 
+
+
+@media (max-width: 600px) {
+    .navbar {
+       display: none;
+    }
+    .navbar-listbox {
+        display: flex;
+    }
+
+}
+
 .navbar-listbox {
     list-style: none;
     background: #04023f;
     display: flex;
-    justify-items: center;
-    justify-content: center;
-    padding: 1%;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -54,7 +65,7 @@ body {
     height: 2em;
     position: relative;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     font-size: large;
     text-decoration: none;
@@ -65,10 +76,10 @@ body {
 
 .drop-menu {
     display: none;
-    width:38%;
+    width:20%;
+    margin-left: 2.25em;
     background: #22438C;
     position: absolute;
-    z-index: 999;
     list-style: none;
 }
 
@@ -83,11 +94,13 @@ body {
 }
 
 .navbar-item:hover {
-    background-color: #22438C;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .navbar li:hover .drop-menu {
     display: flex;
+
     flex-flow: column;
 } 
 
