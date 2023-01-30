@@ -4,7 +4,6 @@ html {
 }
 
 * {
-    padding: 0.5%;
     margin: 0;
     font-family:serif;
 }
@@ -28,16 +27,23 @@ body {
 
 .bio{
     text-align: center;
-    margin: 5%;
+    margin: 10%;
     color: rgb(240, 241, 255);
     align-items: center;
     text-shadow: 0 0 10px #f736cd, 0 0 20px #f736cd, 0 0 30px #f736cd;
 }
 
+#bio-header {
+    margin-top: 1em;
+}
+
+
 #bio-para {
     justify-content: center;
-    align-items: center;
     display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .navbar {
@@ -66,6 +72,7 @@ body {
 .mobile-menu {
     display: none;
     position: absolute;
+    background-color: #04023f;
     top: 50px;
     left: 0;
     height: calc(100vh - 50px);
@@ -83,6 +90,12 @@ body {
 
     #hamburger-icon:active .mobile-menu  {
         display: block;
+    }
+}
+
+@media (max-width: 705px) {
+    .drop-menu {
+        margin-top: 1%;
     }
 }
 
@@ -115,18 +128,19 @@ body {
 
 .drop-menu {
     display: none;
-    width:20%;
-    margin-left: 2.25em;
-    background: #22438C;
-    position: absolute;
+    background: #04023f;
+    position:absolute;
+    align-items: center;
     list-style: none;
+    width: 30%;
+    align-items: center;
 }
 
 .drop-menu-item {
     display:block;
     font-size: large;
+    margin: auto;
     float: none;
-    padding: 0;
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
@@ -139,12 +153,13 @@ body {
 
 .navbar li:hover .drop-menu {
     display: flex;
-
     flex-flow: column;
 } 
 
 .drop-menu-item:hover {
     background: #112C66;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .proj-text{
