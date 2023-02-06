@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    height: 100%;
+    height: 110%;
 }
 
 * {
@@ -11,7 +11,7 @@ html {
 
 .responsive {
     max-width: 25%;
-    height: auto;
+    height: 100%;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 
 .bio{
     text-align: center;
-    margin: 10%;
+    margin: 2%;
     color: rgb(240, 241, 255);
     align-items: center;
     text-shadow: 0 0 10px #f736cd, 0 0 20px #f736cd, 0 0 30px #f736cd;
@@ -41,7 +41,7 @@ body {
 #bio-para {
     justify-content: center;
     display: flex;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 20%;
     margin-right: 20%;
 }
