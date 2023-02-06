@@ -92,12 +92,14 @@ body {
         display: block;
         top: 0%;
     }
+
 }
 
 @media (max-width: 705px) {
     .drop-menu {
         margin-top: 1%;
     }
+
 }
 
 
@@ -187,7 +189,6 @@ body {
     height: 250px;
     display: flex;
     align-items: center;
-
     outline:  1px #6c0594;
 }
 
@@ -195,8 +196,41 @@ body {
     width: 40em;
     height: 15em;
     margin: 0 auto;
-    align-items: center;
     border-radius: 6%;
     background-color: rgb(172, 214, 238);
     box-shadow: 0 0 30px #c1a8e2;
+    display: flex;
+}
+
+#pc-art{
+    border-radius: 50%;
+    height: 60%;
+    margin: 3em;
+    margin-left: 1em;
+}
+
+.box-filler p {
+    margin: 4em;
+    margin-left: -2em;
+    margin-right: 1em;
+}
+
+#game-link {
+    margin-top: 7em;
+    margin-left: 1em;
+    margin-right: 2em;
+    float: right;
+    height: 20%;
+    border-radius: 12px;
+    background-color: rgb(145, 235, 235);
+    border: 2px solid #722eca;
+    
+    transition-duration: 0.4s;
+
+}
+
+#game-link:hover {
+    background-color: #6c0594;
+    color: rgb(65, 233, 233);
+    border: 2px solid rgb(65, 233, 233);
 }
