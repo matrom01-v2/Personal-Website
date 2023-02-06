@@ -1,0 +1,71 @@
+<!--PICO 8 PAGE-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pico 8 Project and Game Page</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-listbox">
+        <li><a class="navbar-item" href="/index.html">Home</a></li>
+        <li>
+          <a class="navbar-item" id="dropmenu" href="#"
+            >Projects and Hobbies▾</a>
+          <ul class="drop-menu">
+            <li>
+              <a class="drop-menu-item" href="./Pico8.html"> Pico-8 Game </a>
+            </li>
+            <li>
+              <a class="drop-menu-item" href="./violin.html">
+                Violin and Piano
+              </a>
+            </li>
+            <li>
+              <a class="drop-menu-item" href="./jpns.html">
+                Japanese Language
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="navbar-item" href="#">Contact me</a></li>
+        <li><a class="navbar-item" href="http://matias.ma/nsfw">Do not</a></li>
+      </ul>
+    </nav>
+    <div class="proj-text">
+      <h1>Pico-8 Game Project</h1>
+      <img
+        src="./images/realsteel1_1.gif"
+        id="kata-gif"
+        alt="gaem gif"
+        height="200"
+        class="responsive"
+      />
+      <p>
+        The following project is a game I created in Pico-8. The game was
+        written using the language Lua. This project was started in my Digital
+        Game Design class my junior year at NMSU. The game itslef continues to
+        be developed and my hope is that it will soon be a fully fleshed out
+        game.<br/>
+      </p>
+    </div>
+    <div class="proj">
+      <div class="box-filler">
+        <img src="/images/katart.png" alt="katarina" id="pc-art" class="responsive"/>
+        <div class="text-container">
+          <p>
+            Gameplay here includes the player starting the first wave. 
+            Enemies will begin surrounding the player and forcing combat. Early on, 
+            the enemies will spawn in smaller waves that progressively increase in intensity. 
+            AOE attacks will become vital as enemy spawns progerssively get larger in quantitiy.
+          </p>
+        </div>
+        <button onclick="window.location.href='/game-demo/realsteel1.html';" id="game-link">Game Demo!</a>
+      </div>  
+    </div>
+  </body>
+</html>
