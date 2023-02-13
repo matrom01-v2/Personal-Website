@@ -75,9 +75,9 @@ body {
 
 }
 
-@media (max-width: 705px) {
+@media (max-width: 762px) {
     .drop-menu {
-        margin-top: 1%;
+        margin-top: 2%;
     }
 }
 
@@ -225,6 +225,12 @@ body {
 }
 
 #treble {
+    border: 5px solid rgb(123, 15, 185);
+    shape-rendering: crispEdges;
+    border-radius: 50%;
+}
+
+#japan {
     border: 5px solid rgb(123, 15, 185);
     shape-rendering: crispEdges;
     border-radius: 50%;
