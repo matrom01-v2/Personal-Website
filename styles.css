@@ -25,26 +25,6 @@ body {
     border-radius: 50%;
 }
 
-.bio{
-    text-align: center;
-    margin: 2%;
-    color: rgb(240, 241, 255);
-    align-items: center;
-    text-shadow: 0 0 10px #f736cd, 0 0 20px #f736cd, 0 0 30px #f736cd;
-}
-
-#bio-header {
-    margin-top: 1em;
-}
-
-
-#bio-para {
-    justify-content: center;
-    display: flex;
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
 
 .navbar {
     display: flex;
@@ -161,20 +141,6 @@ body {
     transition: 0.3s;
 }
 
-.proj-text{
-    text-align: center;
-    margin: 5%;
-    color: aliceblue;
-    text-shadow: 0 0 10px #f736cd, 0 0 20px #f736cd, 0 0 30px #f736cd;
-}
-
-.proj-text p {
-    justify-content: center;
-    display: flex;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
 #kata-gif {
     border: 5px solid rgb(123, 15, 185);
     shape-rendering: crispEdges;
@@ -256,4 +222,34 @@ body {
         height: 100%;
 
     }
+}
+
+#treble {
+    border: 5px solid rgb(123, 15, 185);
+    shape-rendering: crispEdges;
+    border-radius: 50%;
+}
+
+
+/* This is for paragraphs and image
+    on main pages*/
+.page-para{
+    text-align: center;
+    margin: 2%;
+    color: rgb(240, 241, 255);
+    align-items: center;
+    text-shadow: 0 0 10px #f736cd, 0 0 20px #f736cd, 0 0 30px #f736cd;
+}
+
+.page-para h1 {
+    margin-top: 1em;
+}
+
+
+.page-para p {
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
