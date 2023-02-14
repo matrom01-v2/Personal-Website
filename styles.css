@@ -73,6 +73,16 @@ body {
         top: 0%;
     }
 
+    .page-para h2 {
+        text-align: center;
+        width: 50%;
+    }
+    
+    .pri-contact-wrapper{
+        list-style: none;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 762px) {
@@ -220,7 +230,6 @@ body {
         align-self: center;
         margin:auto;
         height: 100%;
-
     }
 }
 
@@ -259,3 +268,19 @@ body {
     margin-left: 20%;
     margin-right: 20%;
 }
+
+.page-para h2 {
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    text-align: left;
+    width: 50%;
+
+}
+
+.page-para li {
+    list-style: none;
+    text-align: left;
+}
+
+
