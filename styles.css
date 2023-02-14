@@ -260,6 +260,10 @@ body {
     margin-top: 1em;
 }
 
+.page-para #bio-header {
+    text-align: center;
+    margin-left: 26%;
+}
 
 .page-para p {
     justify-content: center;
