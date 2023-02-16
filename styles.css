@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    height: 120%;
+    height: 125%;
 }
 
 * {
@@ -282,8 +282,8 @@ body {
     justify-content: center;
     display: flex;
     margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .page-para h2 {
@@ -324,4 +324,27 @@ footer {
     text-decoration: solid;
     text-shadow: none;
     color:#dc50be
+}
+
+.trans-button-wrapper {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.trans-button-wrapper #this-button {
+    background-color: rgb(145, 235, 235);
+    border: 2px solid #722eca;
+}
+
+.trans-button-wrapper #this-button:hover {
+    background-color: #6c0594;
+    color: rgb(65, 233, 233);
+    border: 2px solid rgb(65, 233, 233);
+}
+
+#trans-para {
+    display: none;
+    transition-duration: 0.5s;
 }
