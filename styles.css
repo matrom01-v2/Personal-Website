@@ -354,8 +354,8 @@ footer {
 #board {
     height: 540px;
     width: 640px;
-    background-color: blue;
-    border: 10px solid navy;
+    background-color: #080f6f;
+    border: 10px solid rgb(123, 15, 185);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -366,16 +366,40 @@ footer {
     width: 70px;
     margin: 5px;
 
-    background-color: white;
+    background-color: rgb(167, 143, 206);
     border-radius: 50%;
     border: 5px solid navy;
 }
 
-.red-piece {
-    background-color: red;
-
+.blue-piece {
+    background-color: rgb(207, 2, 248);
+    box-shadow: 0 0 20px #aa7fbb;
 }
 
-.yellow-piece {
-    background-color: yellow;
+.green-piece {
+    background-color: rgb(74, 243, 201);
+    box-shadow: 0 0 10px #aa7fbb;
+}
+
+#winner {
+    text-align: center;
+    margin-left: 25%;
+}
+
+#reset-button {
+    display: none;
+    height: 100%;
+    border-radius: 12px;
+    background-color: rgb(145, 235, 235);
+    border: 2px solid #722eca;
+    transition-duration: 0.4s;
+    margin-left: 47.75%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#reset-button:hover {
+    background-color: #6c0594;
+    color: rgb(65, 233, 233);
+    border: 2px solid rgb(65, 233, 233);
 }
