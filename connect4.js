@@ -41,7 +41,7 @@ function startGame() {
 
 
 /**
- * place pieces on the board
+ * places piece on the board
  * @returns 
  */
 function placePiece() {
@@ -59,7 +59,7 @@ function placePiece() {
     }
 
     board[r][c] = currentPlayer;
-    let tile = document.getElementById(r.toString() + "-" + c.toString());
+    const tile = document.getElementById(r.toString() + "-" + c.toString());
 
     if (currentPlayer == playerOne) {
         tile.classList.add("red-piece");
@@ -76,7 +76,11 @@ function placePiece() {
     checkForWin();
 }
 
-
+/**
+ * Do note: the logic involved here is anything but effecient. I panicked and thought
+ * this was due earlier than it was, but hey it works great!
+ * @returns 
+ */
 function checkForWin() {
 
     // check for horizontal win
@@ -134,12 +138,8 @@ function checkForWin() {
 
 function setWinner(r, c) {
     let winner = document.getElementById("winner");
-    if(board[r][c] == playerOne) {
-        winner.innerText = "Player One wins!";
-    }
-    else {
-        winner.innerText= "Player Two Wins!!!"; 
-    }
+  
+    winner.innerText = `Player ${board[r][c] == playerOne ? "One" : "Two"} Wins!!!`; // turnary condition practice yus
 
     gameOver = true;
 }
