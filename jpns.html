@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japanese Lang Page</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-listbox">
+          <li><a class="navbar-item" href="./index.html"> Home</a></li>
+          <li>
+            <a class="navbar-item" id="dropmenu" href="#"
+              >Projects and Hobbies▾</a
+            >
+            <ul class="drop-menu">
+              <li>
+                <a class="drop-menu-item" href="./Pico8.html"> Pico-8 Game </a>
+              </li>
+              <li>
+                <a class="drop-menu-item" href="./violin.html"> Instruments </a>
+              </li>
+              <li>
+                <a class="drop-menu-item" href="./jpns.html"> Japanese </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="navbar-item" href="./connect4.html">Connect 4</a>
+          </li>
+          <li><a class="navbar-item" href="./contact.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="page-para">
+      <h1>Japanese Language</h1>
+      <img
+        src="./images/japan.jpg"
+        id="japan"
+        alt="eyo its Japan"
+        class="responsive"
+      />
+      <p>
+        こんにちはみんなさん。初めまして、私の名前マテオ・ロメロです。よろしくお願いいたします。
+        日本語は3年間勉強しています。日本語の勉強するが大好き。でも、
+        漢字はとても難しいですよ。今年（２０２３）JETに応募したから、日本へ行くかもしれません。
+        日本へ行ったら、めっちゃ嬉しくなります！
+      </p>
+    </div>
+
+    <div class="trans-button-wrapper">
+      <div id="this-button">
+          <button type="button" id="trans-button" 
+          onclick="document.getElementById('trans-para').style.display = 'block'"
+          style="background-color: rgb(145, 235, 235);" >
+            Click for English
+          </button>
+      </div>    
+    </div>
+    <div class="page-para">
+      <div id="trans-para">
+        <p>
+          Hello everyone. My name is Mateo Romero, it is
+          very nice to meet you. I have been studying Japanese
+          for 3 years. I love the language, but Kanji is difficult.
+          Since I applied to JET this year (2023), I might be going 
+          to Japan. If I do go, I will become estatic!
+        </p>
+      </div>  
+    </div>
+  </body>
+  <footer>
+    <p>Author: Mateo Romero</p>
+  </footer>
+</html>

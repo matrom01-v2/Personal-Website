@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Page</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-listbox">
+          <li><a class="navbar-item" href="./index.html"> Home</a></li>
+          <li>
+            <a class="navbar-item" id="dropmenu" href="#"
+              >Projects and Hobbies▾</a
+            >
+            <ul class="drop-menu">
+              <li>
+                <a class="drop-menu-item" href="./Pico8.html"> Pico-8 Game </a>
+              </li>
+              <li>
+                <a class="drop-menu-item" href="./violin.html"> Instruments </a>
+              </li>
+              <li>
+                <a class="drop-menu-item" href="./jpns.html"> Japanese </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="navbar-item" href="./connect4.html">Connect 4</a>
+          </li>
+          <li><a class="navbar-item" href="./contact.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-para">
+      <h1>Violin and Piano</h1>
+      <img
+        src="./images/treble.jpg"
+        id="treble"
+        alt="gaem gif"
+        height="200"
+        class="responsive"
+      />
+      <p>
+        I have been playing violin for nearly 11 years
+        now. I started in the 5th grade and have played in an
+        active orchestra all the way up to my senior year of high school.
+        During my time in high school, I began to pick up the piano, but remained
+        self-taught off YouTube. In my free time, I enjoy practicing both and it does 
+        not matter what kind of music. While pop music is fun, I do prefer to
+        play classical.
+      </p>
+    </div>
+    
+    <div class="proj">
+      <div class="box-filler">
+        <video width="320" height="240" id="vid" controls>
+          <source src="./videos/smg.mp4" type="video/mp4">
+        </video>
+        <div class="text-container" style="align-content: flex-end;">
+          <p id="vid-para">
+            Here is a video of me playing a theme 
+            from Super Mario Galaxy. The song is titled 
+            "Space Junk Galaxy"
+          </p>
+        </div>
+      </div>  
+    </div>
+  </body>
+  <footer>
+    <p>Author: Mateo Romero</p>
+  </footer>
+</html>

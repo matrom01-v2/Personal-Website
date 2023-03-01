@@ -12,8 +12,10 @@ const __dirname = path.dirname(__filename);
 const extensionToContentType = {
     html: "text/html",
     css: "text/css",
-    jpg: "image/jpeg"
+    jpg: "image/jpeg",
+    mp4: "video/mp4"
 }
+
 function getContentType(extension) {
   switch (extension) {
     case "html": return "text/html";
@@ -60,7 +62,7 @@ const server = http.createServer((req, res) => {
       res.end("Bad Request");
       return;
     };
-});
+}); // end create server
 
 server.listen(port, host, () => {
   console.log(`Server is running @ http://${host}:${port}`);
