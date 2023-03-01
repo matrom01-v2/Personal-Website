@@ -5,7 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Connect4 Game</title>
-
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap"
+      rel="stylesheet"
+    />
 	<link rel="stylesheet" href="styles.css">
 	<script src="connect4.js"></script>
 </head>	
@@ -61,8 +66,15 @@
 	</ul>
   </div>
 <body>
-	<h1>Connect 4</h1>
-	<h2 id="winner"></h2>
+	<div class="page-para">
+		<h1 id="connect4-header">Connect 4</h1>
+		<h2 id="winner"></h2>
+	</div>
 	<div id="board"></div>
+
+	<button id="reset-button"onClick="window.location.reload();">Replay</button>
 </body>
+<footer>
+    <p>Author: Mateo Romero</p>
+  </footer>
 </html>

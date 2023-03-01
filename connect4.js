@@ -62,11 +62,11 @@ function placePiece() {
     const tile = document.getElementById(r.toString() + "-" + c.toString());
 
     if (currentPlayer == playerOne) {
-        tile.classList.add("red-piece");
+        tile.classList.add("blue-piece");
         currentPlayer = playerTwo; // change player
     }
     else {
-        tile.classList.add("yellow-piece");
+        tile.classList.add("green-piece");
         currentPlayer = playerOne;
     }
 
@@ -92,7 +92,7 @@ function checkForWin() {
                     return;
                 }
             }
-         }
+        }
     }
 
 
@@ -138,8 +138,10 @@ function checkForWin() {
 
 function setWinner(r, c) {
     let winner = document.getElementById("winner");
+    let resetButton = document.getElementById("reset-button");
   
-    winner.innerText = `Player ${board[r][c] == playerOne ? "One" : "Two"} Wins!!!`; // turnary condition practice yus
+    winner.innerText = `${board[r][c] == playerOne ? "Purple" : "Blue"} Wins!!!`; // turnary condition practice yus
 
     gameOver = true;
+    resetButton.style.display = "flex";
 }
