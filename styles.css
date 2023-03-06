@@ -386,14 +386,20 @@ footer {
     margin-left: 25%;
 }
 
-#reset-button {
+#game-reset-button {
     display: none;
-    height: 100%;
+    align-content: center;
+    align-items: center;
+    margin-left: 45%;
+}
+
+#reset-button {
+    height: 3em;
+    width: 10em;
     border-radius: 12px;
     background-color: rgb(145, 235, 235);
     border: 2px solid #722eca;
     transition-duration: 0.4s;
-    margin-left: 47.75%;
     margin-top: 1%;
     margin-bottom: 1%;
 }

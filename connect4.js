@@ -146,7 +146,7 @@ function checkForWin() {
 
 function setWinner(r, c) {
     let winner = document.getElementById("winner");
-    let resetButton = document.getElementById("reset-button");
+    let resetButton = document.getElementById("game-reset-button");
   
     winner.innerText = `${board[r][c] == playerOne ? "Purple" : "Blue"} Wins!!!`; // turnary condition practice yus
 
