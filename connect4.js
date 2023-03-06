@@ -1,3 +1,13 @@
+/**
+ * Basic connect 4 game
+ * Initial set up was difficult, so I used a tutorial to help guid
+ * 
+ * Credits to: https://youtu.be/4ARsthVnCTg
+ * 
+ * Note: I noticed that the logic in his video is similar to mine,
+ *       I will say that the logic was my own, and it happens that 
+ *       the video's logic was realitvely the same.
+ */
 
 var playerOne = "R";
 var playerTwo = "Y";
@@ -94,8 +104,6 @@ function checkForWin() {
             }
         }
     }
-
-
 
      // vertical
      for (let c = 0; c < columns; c++) {
